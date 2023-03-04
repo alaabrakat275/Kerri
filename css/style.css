@@ -1,0 +1,346 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+/* html{
+    scroll-behavior: smooth;
+} */
+body{
+    font-family: 'Nunito', sans-serif;
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Montserrat', sans-serif;
+}
+.main-color{
+    color: #e65f78;
+}
+/* navigation bar */
+.navbar-dark .navbar-nav .nav-link{
+    color: white;
+    transition: all 0.5s;
+}
+.navbar{
+    background-color: transparent;
+}
+.navbar .logo{
+    color: white;
+}
+.navbar-dark .navbar-nav :hover a {
+    color: #e65f78 !important; 
+}
+/* home section */
+.home{
+    background-image: url(../images/header-bg.jpg);
+    min-height: 100vh;
+    background-position: 100% 100%;
+    background-size: cover;
+}
+.home-layer{
+    background-color: rgba(0, 0, 0, 0.637);
+  height: 100vh;
+}
+.home p{
+    max-width: 500px;
+    color: rgb(177, 176, 176);
+}
+.home button{
+    border: 1px solid white;
+    color: white;
+}
+.home button:hover{
+    background-color: white;
+    color: black;
+    font-weight: bold;
+}
+#options{
+    position: fixed;
+    top:17%;
+    left:-200px;
+
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+    z-index: 99999;
+}
+#options .colors{
+    background-color:#fff ;
+    padding: 2px 0px;
+    width: 200px;
+}
+#options .colors-box{
+    list-style: none;
+    margin: 0px;
+
+
+}
+.colors-box li a{
+    height: 35px;
+    display: block;
+    width: 35px;
+    cursor: pointer;
+    border-radius: 16px 16px 0px; 
+
+}
+#options .test{
+    padding: 5px 0px;
+    color: #fff;
+    border-radius: 0px 5px 5px 0px;
+    height: 41px;
+    width: 40px;
+    text-align: center;
+    cursor: pointer;
+    background-color: rgb(43, 36, 36);;
+}
+#options .settings i{
+    
+    color: #fff;
+    font-size: 24px;
+    
+}
+.home .mouse {
+    width: 30px;
+    height: 50px;
+    border: 2px solid white;
+    bottom: 7%;
+    animation: moving 1s linear infinite;
+}
+.home .mouse::after{
+    content: "";
+    position: absolute;
+    width: 2px;
+    height: 7px;
+   background-color: white;
+   bottom: 5px;
+   left:50%;
+   transform: translateX(-50%);
+ 
+}
+@keyframes moving{
+    0%{
+        bottom: 7%;
+    }
+    50%{
+        bottom: 5%;
+    }
+    100%{
+        bottom: 7%;
+    }
+}
+.home .up-icon{
+    position: fixed;
+    right: 20px;
+    bottom: 10px;
+    background-color: #e65f78;
+    z-index: 9999;
+    display: none;
+}
+/* end of home section */
+
+
+/* about section */
+.about img{
+    border: 1px solid #dee2e6;
+    border-radius: 10px;
+}
+.about .about-icons li a{
+   width: 30px;
+   height: 30px;
+   border: 2px solid #d4d4d4;
+   padding: 5px;
+   transition: all 0.5s;
+   color: black;
+   font-size: 20px;
+ 
+}
+
+.about .about-icons li :hover{
+    color: #e65f78;
+    border-color: #e65f78;
+    
+}
+/* end of about section */
+/* servisec section */
+.services .services-box{
+    border: 1px solid #d4d4d4;
+}
+.title p{
+    max-width: 500px;
+}
+.services-box .services-box-icon i {
+    font-size: 44px;
+    color: #e65f78;
+   
+} 
+.services-box .content-border{
+    width: 40px;
+    position: absolute;
+    left:50%;
+    transform: translate(-50%);
+    height: 2px;
+    text-align: center;
+    background-color: #e65f78;
+    transition: all 0.5s;
+}
+.services .services-box:hover .content-border{
+    width: 60px;
+}
+/* end of service section */
+
+
+/* hire section  */
+.hire a{
+    color: white;
+    background-color: #e65f78;
+    transition: all 0.5s;
+
+}
+.hire a:hover{
+    color: white;
+    background-color: #bd4c60;
+
+}
+/* end of hireme section */
+
+/* our client section */
+
+/* .our-clients .carosel-item  i{
+    color: #e65f78;
+} */
+.carousel-indicators button{
+    color: #bd4c60 !important;
+    background-color: #e65f78 !important;
+    width: 20px !important;
+    height: 5px !important;
+    border-radius: 20% !important; 
+}
+/* end of ourclient section */
+
+
+/* our work section */
+.menue ul{
+
+list-style: none;
+}
+.menue ul li a{
+    cursor: pointer;
+    font-size: 14px;
+    letter-spacing: 0.03em;
+    border-radius: 30px;
+    padding: 4px;
+    transition: all 0.5s;
+}
+.menue ul li a{
+    text-decoration: none;
+    color: black !important;
+}
+.menue ul li a:hover{
+    background-color: #e65f78;
+    color: #fff !important;
+}
+
+.work-box  {
+    overflow: hidden;
+    
+}
+.work-box .work-image img{
+    transition: all .27s;
+}
+.work-box:hover .work-image img{
+    transform: scale(1.05);
+}
+.work-box:hover .work-caption{
+    transition: all .27s
+}
+.work-box:hover .work-caption {
+    background-color: rgba(0,0,0,0.678);
+}
+.work-box .work-caption{
+
+position: absolute;
+width: 100%;;
+height: 100%;
+top: 0;
+background-color: rgba(0,0,0,0.0);
+
+}
+.work-box .work-content{
+top:100%;
+left: 30%;
+position: absolute;
+transition: all 0.27s;
+
+}
+.work-box:hover .work-content{
+   top: 30%;
+   left:30%
+
+}
+.work-box .work-caption p{
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 14px;
+}
+.work-box .work-caption h4{
+    font-size: 18px;
+}
+/* end of work section */
+
+/* our blogs section */
+
+.blog .card a{
+    transition: all 0.5s;
+}
+.blog .card a:hover{
+    color: #e65f78;
+}
+/* end of blog section */
+
+
+/* contact us section */
+.contact .form input {
+    border: 2px solid #e0e0e0;
+    transition: all 0.27s;
+    box-shadow: none;
+}
+.contact .form input:focus{
+    border-color: #e65f78;
+}
+.contact .form textarea{
+    border: 2px solid #e0e0e0;
+    transition: all 0.27s;
+    box-shadow: none;
+}
+.contact .form textarea:focus{
+    border-color: #e65f78;
+}
+.contact .form button{
+    background-color: #e65f78;
+    color: white;
+    transition: all 0.27s;
+}
+.contact .form button:hover{
+    background-color: #bd4c60;
+}
+/* end of contact us section */
+
+
+
+/* footer */
+footer{
+    background-color: #212121
+}
+footer ul li{
+    width: 40px;
+    height: 40px;
+    padding: 8px;
+    border-radius: 50%;
+    background-color: rgba(241, 241, 241, 0.08);;
+}
+footer ul li i{
+    color: #ababab;
+    transition: all 0.27s;
+}
+footer ul li i:hover{
+    color: #e65f78;
+}
+footer p{
+    color: #ababab;
+}
